@@ -1,0 +1,46 @@
+<!-- it carries over the base.html to this page -->
+{% extends "base.html" %}
+
+{%block content %}
+<main class="main main--about">
+    <p class="title">
+        Master's Student in Software Development at Boston University
+    </p>
+    <p>
+        Hi, my name is Aidan and I am from Bay Area, California! I am a master's student in Software Development with 
+        academic knowledge in software development and data science. I served as a data engineering intern in 
+        the summer of 2022, where I learned the basic knowledge of the ELT process, data ingestion, and AWS services.
+    </p>
+    <p>
+        Some examples include:
+    </p>
+    <p>
+        <ul class="about_list">
+            <li>
+                As a data engineering intern at E15, I learned their data ingestion process with AWS (S3, 
+                Lambda, EC2, Glue, Airflow) and I integrate a new data storage location into its ELT data status 
+                reporting tool. so that the application can more precisely scan and report all the data status 
+                within the ELT process. 
+            </li>
+            <li>
+                As a Design Leader in the CS673 Software Engineering course, I led the selection process of 
+                implementing the most suitable ML framework and model for this project. I played a pivotal role in 
+                integrating the ML model into the backend. Collaboratively with the team, we followed the Agile 
+                methodologies with DevOps techniques by utilizing automation tools such as PivotalTracker, Pre-Commit, 
+                and PyTest.
+            </li>
+            <li>
+                In the CS669 Database Design and Implementation for Business, I designed a Self-Pay-Kiosk- 
+                System through Oracle SQL Developer and maintained detailed design documentation that 
+                contains use cases, structural database rules, DBMS physical ERD, stored procedures and 
+                explanations, index identification and creation, and history table demonstration.
+            </li>
+        </ul>
+    </p>
+    <p>
+        I am excited about opportunities that allow me to apply the concepts and skill sets I learned in academics and my internship 
+        to solving real-life problems. I love connecting with people, and feel free to reach me on LinkedIn or email 
+        me at hcc5022@bu.edu.
+    </p>
+</main>
+{%endblock%}
