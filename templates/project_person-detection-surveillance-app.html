@@ -1,0 +1,54 @@
+{% extends 'base.html'%}
+{% block content%}
+    <main class="main main--project">
+        <div>
+            <img
+                class="hero"
+                src="{{url_for('static', filename=project['hero'])}}"
+                alt="hero for surveillance-app project"
+            />
+            <article class="project">
+                <article class="project__content">
+                    <h2 class="project__heading">{{project['name']}}</h2>
+                    <p>
+                        The FaFi (Face Finder) application implements a person detection algorithm using the 
+                        latest in computer vision based machine learning (YoloV5).
+                    </p>
+                    <p>
+                        A Surveillance mode can be turned on and stores a snapshot of the video 
+                        along with other information whenever people are detected inside the 
+                        video, then an email notification will be sent to the email on file.
+                    </p>
+                    <p>
+                        The design goals of FaFi are the following: 
+                    </p>
+                    <ul>
+                        <li>Efficiency- The ML algorithm used in this application must be efficient.</li>
+                        <li>Reliability- The people detection and email notification must be reliable.</li>
+                        <li>Security- The security of the end user's account and the privacy of the history must be secured.</li>
+                        <li>Robustness- The application must be able to run in all environments, handle errors, be fault 
+                            tolerant and pass thorough testing.</li>
+                    </ul>
+                </article>
+
+                <section>
+                    <article class="project__meta-group">
+                        <h3 class="project__heading project__heading--meta">
+                            Technologies used
+                        </h3>
+                        <ul class="technology-list">
+                            {% for category in project["categories"] %}
+                                <li class="technology-list__item">{{category}}</li>
+                            {% endfor %}
+                        </ul>
+                    </article>
+
+                    <a class="cta" href="{{project['prod']}}">
+                        <img class="cta__icon" src="{{url_for('static', filename='pointer.svg')}}"/>
+                        View our final release on GitHub
+                    </a>
+                </section>
+            </article>
+        </div>
+    </main>
+{% endblock%}

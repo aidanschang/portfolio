@@ -15,7 +15,7 @@ def create_app():
         {
             "name": "Person Detection Surveillance Camera with YoloV5",
             "thumb": "/body-scan.png",
-            "hero": "/body-scan.png",
+            "hero": "/fafi_state_diagram.jpg",
             "categories": ["Python", "Flask", "Yolov5", "sqlite3", "cv2", "torch"],
             "slug": "person-detection-surveillance-app",
             "prod": "https://github.com/aidanschang/CS673-Person-Detection-Surveillance-APP"
